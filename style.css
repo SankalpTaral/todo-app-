@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* .container{
+    display:flex;
+    justify-content: center;
+} */
+h2{ 
+    margin-top:1rem;
+    font-size:3rem;
+    text-align: center;
+}
+.todo-heading{
+    margin-top:2rem;
+    display:flex;
+    gap:2rem;
+    justify-content: center;
+}
+#write-todo{
+    /* flex:1; */
+     width:550px;
+     height:30px;
+    border: 1px solid #ccc;
+   border-radius: 8px;
+    padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+#save{
+  padding-left: 1rem;
+  padding-right: 1rem;
+ border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgb(35, 123, 255);
+  color:white;
+  cursor:pointer;
+
+}
+.disabled{
+   pointer-events: none; 
+   opacity:0.5
+}
+#get-pending{
+color:black;
+background-color: rgb(249, 214, 15);
+ border: 1px solid #ccc;
+  border-radius: 8px;
+   padding-left: 1rem;
+  padding-right: 1rem;
+   /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.todo-details,
+.todo-list {
+  margin-top:2rem;
+  display: grid;
+  grid-template-columns: 10% 40% 20% 30%;
+  align-items: center;
+  text-align: center;
+}
+
+.border-div{
+    margin-top:5px;
+    margin-left:20px;
+    border-bottom: 2px;
+    height:2px;
+    width:90%;
+    background-color: grey;
+    opacity: 0.5;
+}
+
+.delete,.finished,.edit{
+ color:white;
+ background-color: rgba(249, 44, 85, 0.922);
+ border: 1px solid #ccc;
+  border-radius: 8px;
+   padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top:0.5rem;
+   padding-bottom:0.5rem;
+}
+.finished{
+    background-color: green;
+}
+.edit{
+    background-color: rgb(249, 214, 15);
+    color:black;
+}
+.todo-list.disabledy {
+  pointer-events: none;
+  display:none;
+}
+.strike{
+    text-decoration: line-through;
+      opacity: 0.6;
+}
+.hidden {
+    display: none;
+}
